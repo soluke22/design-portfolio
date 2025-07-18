@@ -28,4 +28,12 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Dropdown functionality
+    const dropbtn = document.querySelector('.dropbtn');
+    if (dropbtn) {
+        dropbtn.addEventListener('click', () => {
+            window.location.href = 'index.html#projects';
+        });
+    }
 });
