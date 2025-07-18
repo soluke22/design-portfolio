@@ -8,44 +8,49 @@
 </head>
 <body>
     <header>
-    <nav>
-        <ul>
-            <!-- Navigation links to different sections of the page -->
-            <li><a href="index.html">Home</a></li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Projects</a>
-                <div class="dropdown-content">
-                    <a href="stardust.html">Stardust</a>
-                    <a href="wtss.html">When The Sun Sets</a>
-                </div>
-            </li>
-            <li><a href="index.html#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <!-- Button to toggle between light and dark themes -->
-    <button id="theme-toggle">Toggle Theme</button>
+        <div class="header-container">
+            <nav>
+                <ul>
+                    <!-- Navigation links to different sections of the page -->
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Projects</a>
+                        <div class="dropdown-content">
+                            <a href="stardust.html">Stardust</a>
+                            <a href="wtss.html">When The Sun Sets</a>
+                        </div>
+                    </li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- Button to toggle between light and dark themes -->
+            <button id="theme-toggle">Toggle Theme</button>
+        </div>
     </header>
     <main>
-        <ul>
-            <li>
-                <a href="assets/Stardust Character Sheet.pdf" target="_blank">Character Sheet</a> - Full breakdown of stat categories, character abilities, and sample builds.
-                <div>
-                    <h3>Character Sheet Preview</h3>
-                    <img src="assets/Stardust Stats.png" alt="Stardust Character Sheet Preview" style="max-width: 100%; height: auto; margin-top: 0.5em;">
-                </div>
-            </li>
-            <li>
-                <a href="assets/Stardust Stat Sheet.pdf" target="_blank">Stat Scaling Sheet</a> - Numeric reference for scaling formulas across progression tiers.
-            </li>
-            <li>
-                <a href="assets/Stardust Stats.png" target="_blank">Attribute Flow Diagram</a> - Visual map of stat dependencies, including initiative, damage, and cooldown flow.
-                <div>
-                    <h3>Attribute Flow Diagram</h3>
-                    <img src="assets/Stardust Stats.png" alt="Stardust Attribute Flow Diagram" style="max-width: 100%; height: auto; margin-top: 0.5em;">
-                </div>
-            </li>
-        </ul>
+        <img src="assets/stardust_screenshot_1.jpg" alt="Stardust Screenshot 1" class="screenshot">
+        <div class="pdf-container">
+            <h3>Character Sheet</h3>
+            <iframe src="assets/stardust_character_sheet.pdf" width="100%" height="600px"></iframe>
+            <p><a href="assets/stardust_character_sheet.pdf" target="_blank">Download Character Sheet</a></p>
+        </div>
+        <img src="assets/stardust_screenshot_2.jpg" alt="Stardust Screenshot 2" class="screenshot">
+        <div class="pdf-container">
+            <h3>Stat Scaling Sheet</h3>
+            <iframe src="assets/stardust_stat_sheet.pdf" width="100%" height="600px"></iframe>
+            <p><a href="assets/stardust_stat_sheet.pdf" target="_blank">Download Stat Scaling Sheet</a></p>
+        </div>
+        <div>
+            <h3>Attribute Flow Diagram</h3>
+            <img src="assets/stardust_stats.png" alt="Stardust Attribute Flow Diagram" style="max-width: 100%; height: auto; margin-top: 0.5em;">
+        </div>
     </main>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Solomon Lucas-Thornton</p>
+        <p>Email: <a href="mailto:solomon.lucas.thornton@gmail.com">solomon.lucas.thornton@gmail.com</a></p>
+        <p><a href="https://github.com/Soluke" target="_blank">GitHub</a></p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>

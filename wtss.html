@@ -8,61 +8,74 @@
 </head>
 <body>
     <header>
-    <nav>
-        <ul>
-            <!-- Navigation links to different sections of the page -->
-            <li><a href="index.html">Home</a></li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Projects</a>
-                <div class="dropdown-content">
-                    <a href="stardust.html">Stardust</a>
-                    <a href="wtss.html">When The Sun Sets</a>
-                </div>
-            </li>
-            <li><a href="index.html#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <!-- Button to toggle between light and dark themes -->
-    <button id="theme-toggle">Toggle Theme</button>
+        <div class="header-container">
+            <nav>
+                <ul>
+                    <!-- Navigation links to different sections of the page -->
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Projects</a>
+                        <div class="dropdown-content">
+                            <a href="stardust.html">Stardust</a>
+                            <a href="wtss.html">When The Sun Sets</a>
+                        </div>
+                    </li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- Button to toggle between light and dark themes -->
+            <button id="theme-toggle">Toggle Theme</button>
+        </div>
     </header>
     <main>
       <a href="https://leunarie.itch.io/when-the-sun-sets" target="_blank"><strong>When The Sun Sets</strong></a> is a survival management-action hybrid inspired by Vampire Survivors and Dave The Diver. I led systems and scripting design with a focus on the survival loop, enemy encounters, and simulation logic.</p>
-
+      <img src="assets/wtss_screenshot_1.jpg" alt="When The Sun Sets Screenshot 1" class="screenshot">
         <ul>
             <li><strong>Day/Night Loop:</strong> Built a gameplay loop where players manage resources during the day and survive waves at night. Used player feedback from playtests to refine stage pacing and intensity.</li>
             <li><strong>Guest vs Staff Simulation:</strong> Designed simulation logic and encounter roles for characters using class types and job mechanics. Balanced stat curves based on role behavior.</li>
             <li><strong>Enemy Design:</strong> Authored behavior patterns and class archetypes for enemy units, tuning them against player stats and ability progression.</li>
         </ul>
-        <ul>
-            <li>
-                <a href="assets/WTSS_Systems Doc.pdf" target="_blank">Systems Design Doc</a> – Details gameplay systems, survival loop, and simulation mechanics.
-            </li>
-            <li>
-                <a href="assets/WTSS_Enemy Doc - Google Docs.pdf" target="_blank">Enemy Behavior Doc</a> – Covers enemy types, stat tuning, and behavior scripting.
-            </li>
-            <li>
-                <a href="assets/WTTS Economy.pdf" target="_blank">Economy & Progression</a> – Resource management and upgrade pacing throughout a run.
-            </li>
-        </ul>
+        <img src="assets/wtss_screenshot_2.jpg" alt="When The Sun Sets Screenshot 2" class="screenshot">
+        <div class="pdf-container">
+            <h3>Systems Design Doc</h3>
+            <iframe src="assets/wtss_systems_doc.pdf" width="100%" height="600px"></iframe>
+            <p><a href="assets/wtss_systems_doc.pdf" target="_blank">Download Systems Design Doc</a></p>
+        </div>
+        <div class="pdf-container">
+            <h3>Enemy Behavior Doc</h3>
+            <iframe src="assets/wtss_enemy_doc_-_google_docs.pdf" width="100%" height="600px"></iframe>
+            <p><a href="assets/wtss_enemy_doc_-_google_docs.pdf" target="_blank">Download Enemy Behavior Doc</a></p>
+        </div>
+        <div class="pdf-container">
+            <h3>Economy & Progression</h3>
+            <iframe src="assets/wtts_economy.pdf" width="100%" height="600px"></iframe>
+            <p><a href="assets/wtts_economy.pdf" target="_blank">Download Economy & Progression</a></p>
+        </div>
 
         <h2>System Visuals</h2>
         <div>
             <h3>Time Loop</h3>
-            <img src="assets/WTSS_Time_Loop.png" alt="WTSS Time Loop" style="max-width: 100%; height: auto; margin-top: 0.5em;">
+            <img src="assets/wtss_time_loop.png" alt="WTSS Time Loop" style="max-width: 100%; height: auto; margin-top: 0.5em;">
         </div>
         <div>
             <h3>Guest vs Staff Roles</h3>
-            <img src="assets/WTSS_GuestVsStaff.png" alt="Guest vs Staff Role Diagram" style="max-width: 100%; height: auto; margin-top: 0.5em;">
+            <img src="assets/wtss_guestvsstaff.png" alt="Guest vs Staff Role Diagram" style="max-width: 100%; height: auto; margin-top: 0.5em;">
         </div>
         <div>
             <h3>Stage Pacing</h3>
-            <img src="assets/WTSS_Stages.png" alt="Stage Design and Pacing" style="max-width: 100%; height: auto; margin-top: 0.5em;">
+            <img src="assets/wtss_stages.png" alt="Stage Design and Pacing" style="max-width: 100%; height: auto; margin-top: 0.5em;">
         </div>
         <div>
             <h3>Game Loop Structure</h3>
-            <img src="assets/WTSS_Game_Loop.png" alt="Game Loop Diagram" style="max-width: 100%; height: auto; margin-top: 0.5em;">
+            <img src="assets/wtss_game_loop.png" alt="Game Loop Diagram" style="max-width: 100%; height: auto; margin-top: 0.5em;">
         </div>
     </main>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Solomon Lucas-Thornton</p>
+        <p>Email: <a href="mailto:solomon.lucas.thornton@gmail.com">solomon.lucas.thornton@gmail.com</a></p>
+        <p><a href="https://github.com/Soluke" target="_blank">GitHub</a></p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
