@@ -8,7 +8,22 @@
 </head>
 <body>
     <header>
-        <h1>When The Sun Sets</h1>
+    <nav>
+        <ul>
+            <!-- Navigation links to different sections of the page -->
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Projects</a>
+                <div class="dropdown-content">
+                    <a href="stardust.html">Stardust</a>
+                    <a href="wtss.html">When The Sun Sets</a>
+                </div>
+            </li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Button to toggle between light and dark themes -->
+    <button id="theme-toggle">Toggle Theme</button>
     </header>
     <main>
       <a href="https://leunarie.itch.io/when-the-sun-sets" target="_blank"><strong>When The Sun Sets</strong></a> is a survival management-action hybrid inspired by Vampire Survivors and Dave The Diver. I led systems and scripting design with a focus on the survival loop, enemy encounters, and simulation logic.</p>
