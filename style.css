@@ -143,6 +143,23 @@ section {
     display: none; /* Hidden by default */
 }
 
+/* Project Pages */
+main ul {
+    list-style: none;
+    padding: 0;
+}
+
+main ul li {
+    margin-bottom: 1rem;
+}
+
+main ul li img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
 /* Footer */
 footer {
     text-align: center;
